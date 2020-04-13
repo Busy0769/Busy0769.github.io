@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="刘学馆">
 <meta property="og:description" content="方法一：手动清理mstsc(即3389客户端),的记录存在两个位置。 其一:开始— 运行— 输入 regedit 命令可以打开注册表注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值处理方法:清空即可. 其二:我的文档\default.rdp,这个文件.处理方法:这个文件一般具有隐藏属性,要么在命令">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-13T03:30:40.867Z">
+<meta property="og:updated_time" content="2020-04-13T03:39:21.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除本机mstsc（远程桌面）留下的记录">
 <meta name="twitter:description" content="方法一：手动清理mstsc(即3389客户端),的记录存在两个位置。 其一:开始— 运行— 输入 regedit 命令可以打开注册表注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值处理方法:清空即可. 其二:我的文档\default.rdp,这个文件.处理方法:这个文件一般具有隐藏属性,要么在命令">
@@ -395,7 +395,7 @@
                 
               
 
-              <time title="创建时间：2020-04-13 11:28:44 / 修改时间：11:30:40" itemprop="dateCreated datePublished" datetime="2020-04-13T11:28:44+08:00">2020-04-13</time>
+              <time title="创建时间：2020-04-13 11:28:44 / 修改时间：11:39:21" itemprop="dateCreated datePublished" datetime="2020-04-13T11:28:44+08:00">2020-04-13</time>
             
 
             
@@ -458,7 +458,8 @@
 <p>其一:<br>开始— 运行— 输入 regedit 命令可以打开注册表<br>注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值<br>处理方法:清空即可.</p>
 <p>其二:<br>我的文档\default.rdp,这个文件.<br>处理方法:这个文件一般具有隐藏属性,要么在命令行下删除,要么先显示隐藏文件再删除<br>这样的话,所有的mstsc记录都会被清除掉.</p>
 <hr>
-<h2 id="方法二：批处理（建议使用这种方法）"><a href="#方法二：批处理（建议使用这种方法）" class="headerlink" title="方法二：批处理（建议使用这种方法）"></a>方法二：批处理（建议使用这种方法）</h2><pre><code>reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /va /f
+<h2 id="方法二：批处理"><a href="#方法二：批处理" class="headerlink" title="方法二：批处理"></a>方法二：批处理</h2><p>（建议使用这种方法）</p>
+<pre><code>reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /va /f
 del /a:h &quot;%USERPROFILE%\My Documents\default.rdp&quot;
 del %0
 </code></pre><p>新建一个txt格式文本文档，把以上代码粘贴进去，保存以后，修改一下文件后缀为bat格式的可执行文件，执行一次即可。</p>
@@ -737,7 +738,7 @@ del %0
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：手动清理"><span class="nav-number">1.</span> <span class="nav-text">方法一：手动清理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：批处理（建议使用这种方法）"><span class="nav-number">2.</span> <span class="nav-text">方法二：批处理（建议使用这种方法）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：手动清理"><span class="nav-number">1.</span> <span class="nav-text">方法一：手动清理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：批处理"><span class="nav-number">2.</span> <span class="nav-text">方法二：批处理</span></a></li></ol></div>
             
 
           </div>
