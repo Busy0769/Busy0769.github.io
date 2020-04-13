@@ -103,24 +103,24 @@
 
 
 
-  <meta name="description" content="背景公司有台服务器用来存放常用的公司文件和软件，最近因为疫情影响，有时需要在家办公，因为不是公网的IP，远程起来就比较麻烦，所以最近就在想有没有办法可以实现内网穿透，比较牛的软件是Teamviewer，国内的是向日葵，但使用起来都不太方便，然后发现github上有个叫frp的软件，刚好可以实现内网穿透，也就是在家也可以实现远程连接内网的服务器。    frp 是一款跨平台的内网穿透工具，支持 Wi">
+  <meta name="description" content="方法一：手动清理mstsc(即3389客户端),的记录存在两个位置。 其一:开始— 运行— 输入 regedit 命令可以打开注册表注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值处理方法:清空即可. 其二:我的文档\default.rdp,这个文件.处理方法:这个文件一般具有隐藏属性,要么在命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="frp-windows下实现内网穿透">
-<meta property="og:url" content="http://blog.sexy0769.com/2020/04/10/frp-windows下实现内网穿透/index.html">
+<meta property="og:title" content="清除本机mstsc（远程桌面）留下的记录">
+<meta property="og:url" content="http://blog.sexy0769.com/2020/04/13/清除本机mstsc（远程桌面）留下的记录/index.html">
 <meta property="og:site_name" content="刘学馆">
-<meta property="og:description" content="背景公司有台服务器用来存放常用的公司文件和软件，最近因为疫情影响，有时需要在家办公，因为不是公网的IP，远程起来就比较麻烦，所以最近就在想有没有办法可以实现内网穿透，比较牛的软件是Teamviewer，国内的是向日葵，但使用起来都不太方便，然后发现github上有个叫frp的软件，刚好可以实现内网穿透，也就是在家也可以实现远程连接内网的服务器。    frp 是一款跨平台的内网穿透工具，支持 Wi">
+<meta property="og:description" content="方法一：手动清理mstsc(即3389客户端),的记录存在两个位置。 其一:开始— 运行— 输入 regedit 命令可以打开注册表注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值处理方法:清空即可. 其二:我的文档\default.rdp,这个文件.处理方法:这个文件一般具有隐藏属性,要么在命令">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-13T03:31:44.199Z">
+<meta property="og:updated_time" content="2020-04-13T03:30:40.867Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="frp-windows下实现内网穿透">
-<meta name="twitter:description" content="背景公司有台服务器用来存放常用的公司文件和软件，最近因为疫情影响，有时需要在家办公，因为不是公网的IP，远程起来就比较麻烦，所以最近就在想有没有办法可以实现内网穿透，比较牛的软件是Teamviewer，国内的是向日葵，但使用起来都不太方便，然后发现github上有个叫frp的软件，刚好可以实现内网穿透，也就是在家也可以实现远程连接内网的服务器。    frp 是一款跨平台的内网穿透工具，支持 Wi">
+<meta name="twitter:title" content="清除本机mstsc（远程桌面）留下的记录">
+<meta name="twitter:description" content="方法一：手动清理mstsc(即3389客户端),的记录存在两个位置。 其一:开始— 运行— 输入 regedit 命令可以打开注册表注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值处理方法:清空即可. 其二:我的文档\default.rdp,这个文件.处理方法:这个文件一般具有隐藏属性,要么在命令">
 
 
 
 
 
 
-  <link rel="canonical" href="http://blog.sexy0769.com/2020/04/10/frp-windows下实现内网穿透/">
+  <link rel="canonical" href="http://blog.sexy0769.com/2020/04/13/清除本机mstsc（远程桌面）留下的记录/">
 
 
 
@@ -130,7 +130,7 @@
   };
 </script>
 
-  <title>frp-windows下实现内网穿透 | 刘学馆</title>
+  <title>清除本机mstsc（远程桌面）留下的记录 | 刘学馆</title>
   
 
 
@@ -352,7 +352,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.sexy0769.com/2020/04/10/frp-windows下实现内网穿透/">
+    <link itemprop="mainEntityOfPage" href="http://blog.sexy0769.com/2020/04/13/清除本机mstsc（远程桌面）留下的记录/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Busy">
@@ -369,7 +369,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">frp-windows下实现内网穿透
+          <h1 class="post-title" itemprop="name headline">清除本机mstsc（远程桌面）留下的记录
 
               
             
@@ -395,24 +395,12 @@
                 
               
 
-              <time title="创建时间：2020-04-10 15:29:38" itemprop="dateCreated datePublished" datetime="2020-04-10T15:29:38+08:00">2020-04-10</time>
+              <time title="创建时间：2020-04-13 11:28:44 / 修改时间：11:30:40" itemprop="dateCreated datePublished" datetime="2020-04-13T11:28:44+08:00">2020-04-13</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-04-13 11:31:44" itemprop="dateModified" datetime="2020-04-13T11:31:44+08:00">2020-04-13</time>
               
             
           </span>
@@ -429,7 +417,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件应用/" itemprop="url" rel="index"><span itemprop="name">软件应用</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术教程/" itemprop="url" rel="index"><span itemprop="name">技术教程</span></a></span>
 
                 
                 
@@ -466,41 +454,14 @@
       
 
       
-        <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>公司有台服务器用来存放常用的公司文件和软件，最近因为疫情影响，有时需要在家办公，因为不是公网的IP，远程起来就比较麻烦，所以最近就在想有没有办法可以实现内网穿透，比较牛的软件是Teamviewer，国内的是向日葵，但使用起来都不太方便，然后发现github上有个叫frp的软件，刚好可以实现内网穿透，也就是在家也可以实现远程连接内网的服务器。  </p>
+        <h2 id="方法一：手动清理"><a href="#方法一：手动清理" class="headerlink" title="方法一：手动清理"></a>方法一：手动清理</h2><p>mstsc(即3389客户端),的记录存在两个位置。</p>
+<p>其一:<br>开始— 运行— 输入 regedit 命令可以打开注册表<br>注册表:HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default下面的值<br>处理方法:清空即可.</p>
+<p>其二:<br>我的文档\default.rdp,这个文件.<br>处理方法:这个文件一般具有隐藏属性,要么在命令行下删除,要么先显示隐藏文件再删除<br>这样的话,所有的mstsc记录都会被清除掉.</p>
 <hr>
-<p>frp 是一款跨平台的内网穿透工具，支持 Windows、macOS 与 Linux，它需要你有一台拥有固定公网 IP 的电脑，VPS 最好，然后就能愉快的进行内网穿透了。还支持 https，甚至可以用它进行小程序开发。</p>
-<hr>
-<p>准备：一台拥有固定公网 IP 的电脑/VPS 作为中转节点</p>
-<hr>
-<h2 id="设置-frp-服务器"><a href="#设置-frp-服务器" class="headerlink" title="设置 frp 服务器"></a>设置 frp 服务器</h2><p>1.根据你的系统下载对应的程序：<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">点击下载</a></p>
-<p>2.解压下载下来的压缩文件，将 <strong>frps</strong> 及 <strong>frps.ini</strong> 放到具有公网 IP 的机器（vps）上</p>
-<p>3.这里使用了默认配置即可，无需修改任何文件，直接运行：</p>
-<p>linux命令：  </p>
-<pre><code>./frps -c ./frps.ini
-</code></pre><p>windows命令：</p>
-<pre><code>c:\frp\frps.exe -c c:\frp\frps.ini
-</code></pre><p>假设 frps 解压缩到了 c:\frp\ 文件夹。</p>
-<p>4.然后，让防火墙通过 7000 端口，以及 7001 端口。</p>
-<hr>
-<h2 id="设置-frp-客户端"><a href="#设置-frp-客户端" class="headerlink" title="设置 frp 客户端"></a>设置 frp 客户端</h2><p>1.将 frpc 及 frpc.ini 放到处于内网环境的机器上。</p>
-<p>2.以 Windows 远程桌面为例，修改 frpc.ini 配置文件：</p>
-<pre><code>[common]
-server_addr = 服务器公网 IP
-server_port = 7000
-[RDP]
-type = tcp
-local_ip = 127.0.0.1
-local_port = 3389
-remote_port = 7001
-</code></pre><p>3.然后，启动 Windows 命令提示符，运行：</p>
-<pre><code>c:\frp\frpc.exe -c c:\frp\frpc.ini
-</code></pre><p>假设 frpc 解压缩到了 c:\frp\ 文件夹。</p>
-<p>如果看到两行 start proxy success 就代表成功了。</p>
-<hr>
-<h2 id="远程访问"><a href="#远程访问" class="headerlink" title="远程访问"></a>远程访问</h2><p>此时，就可以在外网访问网内资源了。</p>
-<p>比如远程桌面，只需要打开微软的远程桌面客户端，然后使用  <strong>公网IP:7001</strong>  即可连接。</p>
-<hr>
-<h2 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h2><p>其他的相关配置可以参考官网<a href="https://github.com/fatedier/frp/blob/master/README_zh.md" target="_blank" rel="noopener">使用说明</a>，开始我觉得挺麻烦的，但实际操作下来挺简单的，有兴趣和相关需求的可以试试。</p>
+<h2 id="方法二：批处理（建议使用这种方法）"><a href="#方法二：批处理（建议使用这种方法）" class="headerlink" title="方法二：批处理（建议使用这种方法）"></a>方法二：批处理（建议使用这种方法）</h2><pre><code>reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default&quot; /va /f
+del /a:h &quot;%USERPROFILE%\My Documents\default.rdp&quot;
+del %0
+</code></pre><p>新建一个txt格式文本文档，把以上代码粘贴进去，保存以后，修改一下文件后缀为bat格式的可执行文件，执行一次即可。</p>
 
       
     </div>
@@ -567,8 +528,8 @@ remote_port = 7001
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/28/联想小新pro13日常问题记录/" rel="next" title="联想小新pro13日常问题记录">
-                <i class="fa fa-chevron-left"></i> 联想小新pro13日常问题记录
+              <a href="/2020/04/10/frp-windows下实现内网穿透/" rel="next" title="frp-windows下实现内网穿透">
+                <i class="fa fa-chevron-left"></i> frp-windows下实现内网穿透
               </a>
             
           </div>
@@ -576,10 +537,6 @@ remote_port = 7001
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/04/13/清除本机mstsc（远程桌面）留下的记录/" rel="prev" title="清除本机mstsc（远程桌面）留下的记录">
-                清除本机mstsc（远程桌面）留下的记录 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -780,7 +737,7 @@ remote_port = 7001
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置-frp-服务器"><span class="nav-number">2.</span> <span class="nav-text">设置 frp 服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置-frp-客户端"><span class="nav-number">3.</span> <span class="nav-text">设置 frp 客户端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程访问"><span class="nav-number">4.</span> <span class="nav-text">远程访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他配置"><span class="nav-number">5.</span> <span class="nav-text">其他配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一：手动清理"><span class="nav-number">1.</span> <span class="nav-text">方法一：手动清理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二：批处理（建议使用这种方法）"><span class="nav-number">2.</span> <span class="nav-text">方法二：批处理（建议使用这种方法）</span></a></li></ol></div>
             
 
           </div>
@@ -943,7 +900,7 @@ remote_port = 7001
   
     <script>
   window.livereOptions = {
-    refer: '2020/04/10/frp-windows下实现内网穿透/'
+    refer: '2020/04/13/清除本机mstsc（远程桌面）留下的记录/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
